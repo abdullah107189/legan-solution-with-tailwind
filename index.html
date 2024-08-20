@@ -18,7 +18,8 @@
                 extend: {
                     colors: {
                         primary: '#B68C5A',
-                    }
+                        gray: '#E7E7E7',
+                    },
                 }
             }
         }
@@ -31,11 +32,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+
+
+    <!-- <style>
+        .header-banner {
+            background-image: url('./images/banner.png');
+        }
+    </style> -->
 </head>
 
-<body>
+<body class="md:pt-8 pt-4 container mx-auto">
     <header>
-        <nav class="md:pt-8 pt-4 container mx-auto">
+        <!-- navbar  -->
+        <nav class="">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -70,10 +79,29 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn bg-primary hover:bg-primary border-none text-white rounded-md">Free Consultation</a>
+                    <a class="btn  bg-primary hover:bg-primary border-none text-white rounded-md">Free
+                        Consultation</a>
                 </div>
             </div>
         </nav>
+
+        <!-- header banner  -->
+        <div class="header-banner bg-[url('/images/banner.png')] object-cover bg-cover bg-center w-full">
+            <div class="py-[100px] w-1/2 mx-auto text-center flex flex-col items-center justify-center">
+                <h1 class="font-garamond text-white text-7xl">We Provide Effective <br>Legal Solutions</h1>
+                <p class="md:my-6 my-3 text-gray">There are many variations of passages of Lorem Ipsum available,
+                    but
+                    the majority
+                    have suffered
+                    alteration in some form, by injected humour.</p>
+                <div class="w-4/5 flex items-center justify-center">
+                    <input class="placeholder:font-poppins p-3 rounded-lg mr-4 w-full" type="text" name="" id=""
+                        placeholder="Search your services">
+                    <input class="btn bg-primary hover:bg-primary border-none text-white rounded-md" type="submit"
+                        value="Search">
+                </div>
+            </div>
+        </div>
     </header>
     <main> </main>
     <footer></footer>
