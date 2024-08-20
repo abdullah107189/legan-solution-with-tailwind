@@ -2,16 +2,18 @@
 <html lang="en" data-theme="light">
 
 <head>
-    <meta charset=" UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution With Tailwind</title>
-    <!-- tailwind config  -->
+    <!-- Load Tailwind CSS library first -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Define custom font family -->
     <script>
         tailwind.config = {
             theme: {
                 fontFamily: {
-                    '"poppins': ["Poppins", 'sans - serif'],
-                    '"garamond': ["EB Garamond", 'sans - serif']
+                    'poppins': ["Poppins", 'sans-serif'],
+                    'garamond': ["EB Garamond", 'sans-serif']
                 },
                 extend: {
                     colors: {
@@ -21,11 +23,9 @@
             }
         }
     </script>
-    <!-- daisy ui cnd -->
+    <!-- Daisy UI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- google font  -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -35,7 +35,7 @@
 
 <body>
     <header>
-        <h1 class="">hello</h1>
+        <h1 class="font-garamond">hello</h1>
     </header>
     <main> </main>
     <footer></footer>
